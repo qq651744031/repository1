@@ -18,7 +18,7 @@ public final class Md5Util {
 		MessageDigest md5 = MessageDigest.getInstance("MD5");
 		//调用MD5算法，即返回16个byte类型的值
 		byte[] byteArray = md5.digest(password.getBytes());
-		//注意：MessageDigest只能将String转成byte[]，接下来的事情，由我们程序员来完成
+		//：MessageDigest将String转成byte[]
 		return byteArrayToHexString(byteArray);
 	}
 	/**
